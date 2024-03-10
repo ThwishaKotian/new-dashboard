@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(81, 149, 192);
+}
+
+.user {
+    padding-right: 50px;
+}
+
+#profile {
+    padding-left: 20px;
+}

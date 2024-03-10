@@ -1,0 +1,39 @@
+<div class="main">
+    <div class="top-widgets">
+        <div class="chart-container">
+            <h2 class="chart-title">Application Onboarding Status</h2>
+            <ngx-charts-pie-chart (select)="onChartClick($event)" [results]="pieChartData" [view]="[700, 250]" [legend]="true"
+                [legendTitle]="'Count of Apps'" [doughnut]="true" [labels]="true" [explodeSlices]="false"
+                [gradient]="false" [animations]="true" [arcWidth]="0.50" class="thick-doughnut"></ngx-charts-pie-chart>
+        </div>
+        <div class="totalapps">
+            <p id="total-apps-text">Total number of Applications</p>
+            <div class="total-apps-number" (click)="showAllApplications()">
+                {{ applications.length }}
+            </div>
+        </div>
+    </div>
+    <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Application Name</th>
+              <th>Compliance</th>
+              <th>Last Updated</th>
+              <th>Owner</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let app of filteredApplications">
+              <td>{{ app.App }}</td>
+              <td>{{ app.Compliance }}</td>
+              <td>{{ app.Date }}</td>
+              <td>{{ app.Owner }}</td>
+              <td>{{ app.Type }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+</div>

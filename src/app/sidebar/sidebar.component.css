@@ -1,0 +1,21 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    font-weight: 500;
+}
+
+.dashboard {
+    color: rgb(160, 58, 228);
+    padding: 5px 15px;
+    border-left: 3px solid rgb(160, 58, 228);
+}
+
+.products, .applications, .configuration {
+    padding: 5px 15px;
+}
+
+.products:hover, .applications:hover, .configuration:hover {
+    color: rgb(160, 58, 228);
+}

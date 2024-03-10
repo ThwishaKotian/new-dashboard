@@ -1,0 +1,18 @@
+.header {
+    border-bottom: 2px solid rgb(197, 190, 190);
+}
+
+.sidebar {
+    width:25%;
+    min-height: calc(100vh - 70px);
+    background-color: #ffffff;
+    border-right: 2px solid rgb(197, 190, 190);
+}
+
+.main-container {
+    display: flex;
+}
+
+.main {
+    padding: 30px;
+}
