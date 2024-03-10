@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgxChartsModule } from '@swimlane/ngx-charts'; 
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs, where, query } from 'firebase/firestore';
